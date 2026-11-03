@@ -1,0 +1,27 @@
+{
+  "id": "knowledge-commands",
+  "name": "Knowledge Commands",
+  "description": "Telegram /review /dismiss /postpone /accept /retire /keep /keep-permanent for skill-V2 knowledge watcher (W3.5).",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "kanbanCliPath": {
+        "type": "string",
+        "description": "Override path to kanban-tasks cli.sh."
+      },
+      "operatorAllowlist": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Telegram user IDs allowed to issue knowledge commands. Falls back to OPENCLAW_GATEWAY_OPERATOR_IDS env."
+      },
+      "execTimeoutMs": {
+        "type": "integer",
+        "minimum": 1000,
+        "maximum": 60000,
+        "default": 20000,
+        "description": "Timeout for kanban CLI invocations."
+      }
+    }
+  }
+}

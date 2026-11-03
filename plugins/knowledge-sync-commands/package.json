@@ -1,0 +1,28 @@
+{
+  "name": "@bevox/knowledge-sync-commands",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenClaw plugin: Telegram slash commands for knowledge-sync canonical approval flow (E1.1).",
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "lib/",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "openclaw": {
+    "extensions": ["./index.js"],
+    "compat": {
+      "pluginApi": ">=2026.4.0",
+      "minGatewayVersion": "2026.4.0"
+    },
+    "build": {
+      "openclawVersion": "2026.4.8",
+      "pluginSdkVersion": "2026.4.8"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

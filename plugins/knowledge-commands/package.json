@@ -1,0 +1,27 @@
+{
+  "name": "@openclaw/plugin-knowledge-commands",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenClaw plugin: Telegram /review /dismiss /postpone /accept /retire /keep /keep-permanent for skill-V2 knowledge watcher.",
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "lib/",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "openclaw": {
+    "extensions": ["./index.js"],
+    "compat": {
+      "pluginApi": ">=2026.4.0",
+      "minGatewayVersion": "2026.4.0"
+    }
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

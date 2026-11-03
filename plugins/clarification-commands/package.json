@@ -1,0 +1,31 @@
+{
+  "name": "@bevox/clarification-commands",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenClaw plugin: Telegram /clr_* commands for clarification-agent (E10 OH wave-3).",
+  "type": "module",
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "lib/",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "openclaw": {
+    "extensions": ["./index.js"],
+    "compat": {
+      "pluginApi": ">=2026.4.0",
+      "minGatewayVersion": "2026.4.0"
+    },
+    "build": {
+      "openclawVersion": "2026.4.8",
+      "pluginSdkVersion": "2026.4.8"
+    }
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

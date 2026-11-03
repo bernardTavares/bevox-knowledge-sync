@@ -1,0 +1,22 @@
+{
+  "id": "knowledge-sync-commands",
+  "name": "Knowledge Sync Commands",
+  "description": "Telegram slash commands for the knowledge-sync canonical approval flow (/ks_approve, /ks_reject, /ks_pending, /ks_status). Bypasses LLM via plugin command framework — fixes the inline-button gap documented in spec 2026-04-10-e1.1-fix-plugin-commands.md.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "scriptsDir": {
+        "type": "string",
+        "description": "Override path to knowledge-sync skill scripts/ directory. Defaults to ~/.openclaw/skills/knowledge-sync/scripts/"
+      },
+      "execTimeoutMs": {
+        "type": "integer",
+        "minimum": 1000,
+        "maximum": 120000,
+        "default": 30000,
+        "description": "Timeout (ms) for canonical.sh subprocess invocations."
+      }
+    }
+  }
+}

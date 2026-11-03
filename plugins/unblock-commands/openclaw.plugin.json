@@ -1,0 +1,41 @@
+{
+  "id": "unblock-commands",
+  "name": "Unblock Commands",
+  "description": "Telegram /unblock command to resolve blocked tasks (pass|cancel|retry|answer).",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "kanbanCliPath": {
+        "type": "string",
+        "description": "Override path to kanban-tasks cli.sh."
+      },
+      "clarificationCliPath": {
+        "type": "string",
+        "description": "Override path to clarification-agent cli.sh (used by retry/answer sub-actions)."
+      },
+      "testerRunsDir": {
+        "type": "string",
+        "description": "Directory containing tester test_run JSON files."
+      },
+      "operatorAllowlist": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Telegram user IDs allowed to issue /unblock. Falls back to OPENCLAW_GATEWAY_OPERATOR_IDS env."
+      },
+      "recencyHours": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 168,
+        "default": 24,
+        "description": "Max age (hours) of test_run still considered eligible for /unblock pass."
+      },
+      "execTimeoutMs": {
+        "type": "integer",
+        "minimum": 1000,
+        "maximum": 60000,
+        "default": 15000
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "clarification-commands",
+  "name": "Clarification Commands",
+  "description": "Telegram /clr_* commands wiring clarification-agent CLI to Bernard chat. Bypasses LLM via plugin command framework.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "cliPath": {
+        "type": "string",
+        "description": "Override path to clarification-agent cli.sh. Defaults to ~/.openclaw/clarification-agent/cli.sh"
+      },
+      "execTimeoutMs": {
+        "type": "integer",
+        "minimum": 1000,
+        "maximum": 120000,
+        "default": 30000,
+        "description": "Timeout (ms) for cli.sh subprocess invocations."
+      }
+    }
+  }
+}
