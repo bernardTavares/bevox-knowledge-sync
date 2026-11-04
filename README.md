@@ -6,7 +6,7 @@ This repo has two parts:
 - **the skill** that watches the knowledge clone, acts on it and snapshots it;
 - **four OpenClaw plugins** that turn approvals and escalations into Telegram slash commands.
 
-It is part of the [Bevox Company OS](https://github.com/bernardTavares/bevox-company-os), and its state shows up in [Mission Control](https://github.com/bernardTavares/bevox-mission-control).
+It is part of the [Bevox Company OS](https://github.com/bernardTavares/bevox-company-os), and its state shows up in [Mission Control](https://github.com/bernardTavares/bevox-mission-control). The Claude Code side, the skill that writes PRDs, ADRs and specs into the knowledge repo as drafts, is [bevox-knowledge-contribute](https://github.com/bernardTavares/bevox-knowledge-contribute).
 
 > **Status:** shipped internally on one host (systemd timers plus an OpenClaw skill and plugins). The knowledge repo it governed is private and is not included here.
 
