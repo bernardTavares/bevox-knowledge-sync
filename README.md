@@ -8,7 +8,7 @@ This repo has two parts:
 
 It is part of the [Bevox Company OS](https://github.com/bernardTavares/bevox-company-os), and its state shows up in [Mission Control](https://github.com/bernardTavares/bevox-mission-control).
 
-> **Status:** shipped internally on one host (systemd timers plus an OpenClaw skill and plugins) from April to May 2026, then paused with Bevox. The knowledge repo it governed is private and is not included here.
+> **Status:** shipped internally on one host (systemd timers plus an OpenClaw skill and plugins). The knowledge repo it governed is private and is not included here.
 
 ## Why
 
