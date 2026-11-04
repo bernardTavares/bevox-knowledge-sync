@@ -1,6 +1,12 @@
 # Bevox Knowledge Sync
 
-A governed, git-backed **knowledge spine for AI agents**. Every agent at Bevox read the same canonical knowledge repo: PRDs, ADRs, specs and the roadmap. Agents could write freely to `draft/*` branches. Anything canonical needed a **one-tap human approval on Telegram**, and that approval ran deterministically, with no LLM in the path.
+[![tests](https://img.shields.io/badge/tests-113%20plugin%20tests-brightgreen)](#) [![license](https://img.shields.io/badge/license-FSL--1.1--MIT-blue)](./LICENSE.md) ![language](https://img.shields.io/github/languages/top/bernardTavares/bevox-knowledge-sync) ![status](https://img.shields.io/badge/status-used%20internally-orange)
+
+![bevox-knowledge-sync](docs/assets/social-card.png)
+
+> Part of the [4-layer AI-first company series](https://github.com/bernardTavares). License: FSL-1.1-MIT (source-available, converts to MIT after 2 years)
+
+A governed, git-backed **knowledge spine for AI agents**. It is designed so that every agent at Bevox reads the same canonical knowledge repo: PRDs, ADRs, specs and the roadmap. Agents can write freely to `draft/*` branches. Anything canonical needs a **one-tap human approval on Telegram**, and that approval runs deterministically, with no LLM in the path.
 
 This repo has two parts:
 - **the skill** that watches the knowledge clone, acts on it and snapshots it;
